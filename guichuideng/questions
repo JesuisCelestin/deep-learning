@@ -1,0 +1,14 @@
+你好
+文件feature_count.py 如果在python3.6下运行，
+```
+input_file = open('input_features.bin', 'wb')
+s = pickle.dumps(input_features)
+input_file.write(s)
+input_file.close()
+```
+这里会出现报错
+```
+    s = pickle.dumps(input_features)
+TypeError: can't pickle dict_values objects
+```
+查询了互联网也没有解决这个问题，希望大神如果有时间能够解答一下
